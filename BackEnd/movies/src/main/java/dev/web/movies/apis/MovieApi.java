@@ -3,7 +3,7 @@ package dev.web.movies.apis;
 import dev.web.movies.dtos.MovieDTO;
 import dev.web.movies.entities.Movie;
 import dev.web.movies.repositories.IMovieRepository;
-import dev.web.movies.services.MovieService;
+import dev.web.movies.services.IMovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ import java.util.List;
 @RequestMapping(value="/api/movies", produces = "application/json")
 public class MovieApi {
     @Autowired
-    private MovieService movieService;
+    private IMovieService movieService;
 
     @Autowired
     private IMovieRepository movieRepository;
@@ -35,7 +35,6 @@ public class MovieApi {
     public List<MovieDTO> findAllShowingMoviesByName(@RequestParam String name){
         return movieService.findAllShowingMoviesByName(name);
     }
-
 
     @PostMapping
     public void updateMovie(@RequestBody Movie movie){
