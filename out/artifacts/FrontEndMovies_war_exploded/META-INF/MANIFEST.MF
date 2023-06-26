@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: HP
+Build-Jdk: version 19.0.1
+Implementation-Title: FrontEndMovies
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: dev
+Main-Class: ${start-class}
+
