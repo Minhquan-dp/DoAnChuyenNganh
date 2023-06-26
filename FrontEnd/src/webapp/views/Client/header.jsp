@@ -105,6 +105,9 @@
                 Chưa có tải khoản?
             </div>
             <div class="modal-header d-flex justify-content-center">
+                <a href="/reset_password">Quên mật khẩu?</a>
+            </div>
+            <div class="modal-header d-flex justify-content-center">
                 <button id="btn-register" class="btn btn-info btn-block">Đăng Ký</button>
             </div>
         </div>
