@@ -236,7 +236,7 @@ public class BackEndCinemaProjectApplication {
 
                 Branch branch2 = new Branch();
                 branch2.setName("CGV Thảo Điền Pearl");
-                branch2.setDiaChi("Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo Điền, Quận 2, TP. Hồ Chí Minh");
+                branch2.setDiaChi("Tầng 2, Thảo Điền Mall, 12 Quốc Hương, Phường Thảo Điền, Quận 1, TP. Hồ Chí Minh");
                 branch2.setPhoneNo("1900 6017");
                 branch2.setImgURL("https://www.google.com/maps/vt/data=6TcLQVyXF1p1HKKv0q7xJmo4ELdrmOQGAtCkPyfMwQFCXwRG6kr7HsYz3DZlny0XHQoGNobAAkx5tNZoTQnnQkrWACYjpzrseF4YyV5zsLz9R6pfS1qMZddn_-jtle-886S9cmgOm37QIgG9-mlbph9G55Aos7kFdBGnkdQYlHcN3zOB-xKCKfaV5LJI358");
                 branch2 = branchRepository.save(branch2);
