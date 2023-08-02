@@ -1,0 +1,24 @@
+.card__info:hover button{
+    display: block !important;
+    top:50%;
+
+
+
+}
+.card__btn--show{
+    transition: .2s ease;
+
+}
+
+.card__info:hover img {
+    opacity: 0.5;
+    display: block !important;
+
+
+
+}
+/*.card button{*/
+/*    display: none;*/
+/*}*/
+.card__address:hover {
+}
