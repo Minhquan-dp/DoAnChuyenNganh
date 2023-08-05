@@ -1,0 +1,206 @@
+* {
+  font-family: "Dancing Script", cursive;
+  font-family: "Heebo", sans-serif;
+  font-family: "Kalam", cursive;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-image: url("../imgs/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  z-index: 5;
+  background-image: url("../imgs/background.png");
+  background-size: contain;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 60px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+#back {
+  position: absolute;
+}
+.bottom {
+  background-color: #291b3b;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+.button-bottom a {
+  text-decoration: none;
+  color: white;
+}
+.button-bottom p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-bottom: 0;
+}
+.button-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main {
+  padding-top: 60px;
+  width: 100%;
+}
+
+main a:hover {
+  opacity: 0.8;
+  transition: 0.3 all ease-in;
+}
+
+.content p {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  margin-bottom: 0;
+}
+.content {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.btn-yellow {
+  color: white;
+  background-color: #f29438;
+}
+.btn-yellow:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+  background-color: #f29438;
+}
+#age {
+  position: relative;
+}
+#age img {
+  width: 40px;
+  height: auto;
+}
+.inner-text {
+  position: absolute;
+  color: black !important;
+  top: 40%;
+  font-weight: 700;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav-tabs {
+  border: 0;
+}
+.nav-tabs a {
+  font-weight: 700;
+  color: #755d74;
+}
+.active {
+  background-color: transparent !important;
+  color: #ea3877 !important;
+}
+.nav-link:hover,
+.nav-link:focus {
+  border: 1px solid #f29438 !important;
+  color: #ea3877 !important;
+}
+.nav-link .active {
+  border: 1px solid #f29438 !important;
+}
+.show-date {
+  width: 100%;
+
+  background-color: #e83a93;
+}
+.show-date a {
+  text-decoration: none;
+  color: white;
+}
+.pick-time {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pick-time .time {
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #893084;
+}
+.pick-time .time:hover {
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+  background-color: #f29438;
+}
+.side-bar {
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+  padding-left: 10px;
+  padding-top: 50px;
+  z-index: 6;
+  max-height: 80vh;
+  padding-bottom: 60px;
+  top: 60px;
+  left: 0;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  width: 270px;
+  height: 800px;
+  background-color: black !important;
+}
+.side-bar ul li {
+  font-weight: 500;
+  color: white !important;
+  height: 50px;
+  padding: 0 10px;
+  width: 90%;
+}
+.side-bar .nav-item a {
+  text-decoration: none;
+  color: white;
+}
+.side-bar .nav-item:hover {
+  cursor: pointer;
+  background-color: #ea3b92;
+}
+.sidebar-open {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.bg-yellow {
+  background-color: #f29438;
+}
+.input-custom {
+  width: 90%;
+  background: transparent;
+  border: 1px solid #ce3e82;
+  height: 36px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: inherit;
+  line-height: inherit;
+  font-size: 0.9rem;
+}
+.btn-custom {
+  display: block;
+  border: 1px solid #ce3e82;
+  padding: 0 10px;
+  margin-top: 5px;
+  background: #ce3e82;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 32px;
+}
