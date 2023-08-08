@@ -19,7 +19,7 @@
 
 <jsp:include page="header.jsp"/>
 
-<h2 class="container mt-5 pt-5">Chọn Phòng</h2>
+<h2 class="container mt-3 pt-5" STYLE="border-bottom: 3px solid black; line-height: 60px;">CHỌN PHÒNG</h2>
 
     <div class="d-flex justify-content-between flex-wrap container">
         <c:forEach items="${listRooms}" var="room">

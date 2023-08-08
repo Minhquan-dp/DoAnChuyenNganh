@@ -1,5 +1,6 @@
 .container{
-    margin-top: 50px;
+    margin-top: 100px;
+    max-width: 80%;
 }
 
 .carousel-inner img {
@@ -173,4 +174,41 @@ input {
     .search-btn {
         background: #f1f1f1;
     }
+}
+.form-inline .nav-item{
+    margin-left: 20px;
+}
+.search-box{
+    margin: 50px 0 10px 0;
+}
+.search-container {
+    position: relative;
+}
+.search-bar {
+    padding: 0;
+}
+
+
+.suggestion-list {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: none;
+    z-index: 100;
+}
+
+.suggestion-list-item {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.suggestion-list-item:hover {
+    background-color: #f1f1f1;
+}
+h2{
+    border-bottom: 3px solid black;
+    line-height: 30px;
+    /*padding: 40px 0 0px 0;*/
 }

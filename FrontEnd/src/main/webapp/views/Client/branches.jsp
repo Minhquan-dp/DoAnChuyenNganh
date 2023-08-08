@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="../../style/Branches.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/style/Branches.css" rel="stylesheet" type="text/css">
 
     <title>Chọn chi nhánh</title>
 </head>
@@ -21,7 +21,7 @@
 <body>
 <jsp:include page="header.jsp"/>
 
-<h2 class="container mt-5 pt-5">Chọn Chi Nhánh</h2>
+<h2 class="container mt-5 pt-5" style="padding: 0">CHỌN CHI NHÁNH</h2>
 
 <div class="d-flex justify-content-between flex-wrap container">
     <c:forEach items="${branches}" var="branch">

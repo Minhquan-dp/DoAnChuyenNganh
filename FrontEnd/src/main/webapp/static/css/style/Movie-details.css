@@ -1,0 +1,32 @@
+.container h1{
+    border-bottom: 3px solid black;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.movie-detail-frame{
+    /*float: left;*/
+    overflow: hidden;
+    display: flex;
+    height: 450px;
+    margin-bottom: 20px;
+}
+.image-detail-frame{
+    width: 300px; /* Đặt kích thước khung ảnh theo mong muốn */
+    height: 400px;
+}
+.image-detail-frame img {
+    width: 100%; /* Ảnh sẽ lấp đầy khung ảnh */
+    height: 400px; /* Đảm bảo tỷ lệ khung hình đúng */
+}
+.movie-detail-inf{
+    padding: 2% 0 2% 50px;
+}
+.movie-detail-inf th{
+    padding-bottom: 20px;
+}
+.movie-detail-inf .name{
+    font-size: 30px;
+}
+.movie-detail-inf th{
+    padding-right: 20px;
+}

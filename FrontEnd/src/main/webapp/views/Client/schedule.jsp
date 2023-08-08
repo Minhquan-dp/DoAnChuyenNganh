@@ -25,7 +25,7 @@
 <div class="container">
 
     <form action="room-selection" method="post">
-        <h2>Chọn lịch xem phim</h2>
+        <h2 style="border-bottom: 3px solid black; line-height: 60px;">CHỌN LỊCH XEM PHIM</h2>
         <br>
         <p>Chọn ngày xem phim (yyyy-MM-dd)</p>
         <select id="listDate" class="form-control form-control-lg" name="startDate" >

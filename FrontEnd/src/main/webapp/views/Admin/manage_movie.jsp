@@ -83,7 +83,22 @@
             });
         });
     </script>
+    <style>
+        a.nav-link.menu-link{
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: lightseagreen;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
 
+    </style>
 
     <title>Manage Movies :: Admin</title>
 </head>
@@ -229,7 +244,7 @@
                                                 </div>
                                             </li>
                                             <li>
-                                                <a href="/admin_home" class="nav-link menu-link">GO BACK</a>
+                                                <a href="/admin_home" class="nav-link menu-link" style="background-color: orangered">GO BACK</a>
                                             </li>
                                         </ul>
                                     </div>

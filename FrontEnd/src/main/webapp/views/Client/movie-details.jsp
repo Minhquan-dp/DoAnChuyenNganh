@@ -11,9 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="../../style/Home.css" rel="stylesheet" type="text/css">
-
-    <title>Thanh Toán</title>
+<%--    <link href="../../static/css/style/Home.css" rel="stylesheet" type="text/css">--%>
+    <link href="../../static/css/style/Movie-details.css" rel="stylesheet" type="text/css">
+    <title>${movie.name}</title>
 </head>
 
 <body>
@@ -21,11 +21,10 @@
 <jsp:include page="header.jsp"/>
 
 <div class="container mt-5 pt-5">
-<h1>${movie.name}</h1>
+<h1>Nội Dung Phim</h1>
 
-<div style="display:flex">
-
-    <div style="margin-right:50px">
+    <div class="movie-detail-frame">
+    <div class="image-detail-frame">
         <img src="${movie.smallImageURl}" alt="">
             <%--Nếu chưa đăng nhập mà đã click vào nút mua vé thì trả về trang có nút có class btn-buy-ticket-not-signed-in để
                     toggle cái form đăng nhập--%>
@@ -38,8 +37,12 @@
             </c:otherwise>
         </c:choose>
     </div>
-
+    <div class="movie-detail-inf">
     <table>
+        <tr class="name">
+            <th class="table-inf"><b>PHIM ĐIỆN ẢNH </b></th>
+            <th>${movie.name}</th>
+        </tr>
         <tr>
             <th class="table-inf"><b>Đạo diễn:</b></th>
             <th>${movie.director}</th>
@@ -69,22 +72,24 @@
             <th>${movie.rated}</th>
         </tr>
     </table>
-</div>
+    </div>
+    </div>
 
-<div style="display:flex;">
-    <div style="margin-right: 50px">
-        <h1>Trailer:</h1>
-        <iframe width="560" height="315" src="${movie.trailerURL}"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture"
-                allowfullscreen>
-        </iframe>
+    <div style="display:flex; margin-bottom: 40px">
+        <div style="margin-right: 50px">
+            <h1>Trailer:</h1>
+            <iframe width="560" height="315" src="${movie.trailerURL}"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <div>
+            <h1>Giới Thiệu:</h1>
+            <p>${movie.longDescription}</p>
+        </div>
     </div>
-    <div>
-        <h1>Giới Thiệu:</h1>
-        <p>${movie.longDescription}</p>
-    </div>
-</div>
+
 </div>
 <%--Nếu chưa đăng nhập mà đã click vào nút mua vé thì trả về trang Home có function để toggle cái form đăng nhập--%>
 <c:choose>

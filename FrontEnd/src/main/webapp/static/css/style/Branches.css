@@ -1,0 +1,17 @@
+.img-branch {
+    height: 400px;
+}
+
+.branch-item {
+    margin-bottom: 50px;
+}
+h2{
+    border-bottom: 3px solid black;
+    line-height: 60px;
+}
+.container{
+    margin-bottom: 20px;
+}
+.card-img, .card-img-top {
+    height: 300px;
+}

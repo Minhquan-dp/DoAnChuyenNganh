@@ -1,0 +1,17 @@
+.navbar{
+    position: relative;
+}
+.navbar-brand{
+    position: absolute;
+    padding: 120px;
+}
+.navbar-collapse{
+    padding-left: 240px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.list-unstyled{
+    padding-right: 120px;
+}
+

@@ -18,6 +18,15 @@
         th {
             padding: 0px 20px 5px 0px;
         }
+        h2{
+            border-bottom: 3px solid black;
+            line-height: 60px;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            margin-left:50px;
+        }
     </style>
 </head>
 
@@ -28,7 +37,7 @@
 
 <br><br><br>
 <div class="container">
-        <h2>Thanh toán hóa đơn</h2>
+        <h2>THANH TOÁN HÓA ĐƠN</h2>
         <br>
         <div style="display:flex">
             <table>
@@ -65,11 +74,11 @@
                     <th>${totalAmount}</th>
                 </tr>
             </table>
-            <div style="margin-left:50px">
+            <div>
                 <img src="${sessionScope.schedule.movie.smallImageURl}" alt="">
             </div>
-            <div style="margin-left:50px; height: 300px;">
-                <img style="height: 100%;" src="${sessionScope.schedule.branch.imgURL}" alt="">
+            <div>
+                <img src="${sessionScope.schedule.branch.imgURL}" alt="">
             </div>
         </div>
         <br>

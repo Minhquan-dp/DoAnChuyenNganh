@@ -45,48 +45,6 @@
                                 </div>
                             </a>
                         </div>
-<%--                        <div class="col-md-4">--%>
-<%--                            <a href="/api/manage_schedule">--%>
-<%--                                <div class="option-box">--%>
-<%--                                    <div class="option-box-img">--%>
-<%--                                        <img src="<%=request.getContextPath()%>/static/images/admin/manage-schedule.png" width="100%">--%>
-<%--                                    </div>--%>
-<%--                                    <h5>MANAGE SCHEDULES</h5>--%>
-<%--                                </div>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                        <div class="col-md-4">--%>
-<%--                            <a href="/admin_home/manage_room">--%>
-<%--                                <div class="option-box">--%>
-<%--                                    <div class="option-box-img">--%>
-<%--                                        <img src="<%=request.getContextPath()%>/static/images/admin/manage-cinemas.png" width="100%">--%>
-<%--                                    </div>--%>
-<%--                                    <h5>MANAGE ROOM</h5>--%>
-<%--                                </div>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="row">--%>
-<%--                        <div class="col-md-4">--%>
-<%--                            <a href="/api/manage_branch">--%>
-<%--                                <div class="option-box">--%>
-<%--                                    <div class="option-box-img">--%>
-<%--                                        <img src="<%=request.getContextPath()%>/static/images/admin/manage-branch.png" width="100%">--%>
-<%--                                    </div>--%>
-<%--                                    <h5>MANAGE BRANCH</h5>--%>
-<%--                                </div>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                        <div class="col-md-4">--%>
-<%--                            <a href="/api/manage_ticket">--%>
-<%--                                <div class="option-box">--%>
-<%--                                    <div class="option-box-img">--%>
-<%--                                        <img src="<%=request.getContextPath()%>/static/images/admin/manage-ticket.png" width="100%">--%>
-<%--                                    </div>--%>
-<%--                                    <h5>MANAGE TICKET</h5>--%>
-<%--                                </div>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
                     </div>
                 </div>
             </div>

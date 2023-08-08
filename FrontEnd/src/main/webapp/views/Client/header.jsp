@@ -14,16 +14,16 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-
+    <link href="../../static/css/style/Header.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
     </script>
 
 </head>
 <!-- nav bar -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top px-5">
     <a class="navbar-brand" href="/">CINEMA</a>
-    <div class="collapse navbar-collapse" id="navb">
-        <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="/">Trang chủ</a>
             </li>
@@ -33,29 +33,29 @@
                 </li>
             </c:if>
         </ul>
-        <div class="form-inline my-2 my-lg-0 list-unstyled">
-            <c:if test="${sessionScope.jwtResponse eq null}">
-                    <li class="nav-item">
-                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalLoginForm">Đăng nhập</a>
-                    </li>
-                    <li class="nav-item" style="margin-left: 20px">
-                        <a href="" class="btn btn-info" data-toggle="modal" data-target="#modalRegisterForm">Đăng ký</a>
-                    </li>
-            </c:if>
-            <c:if test="${sessionScope.jwtResponse ne null}">
-                <li class="nav-item">
-                    <a style="color: gold">${sessionScope.jwtResponse.name}</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/account/sign-out" class="btn btn-danger">Đăng xuất</a>
-                </li>
-            </c:if>
-            <c:if test="${sessionScope.jwtResponse.name eq 'Admin'}">
-                <li class="nav-item">
-                    <a href="/admin_home" class="btn btn-secondary ml-2">Đến trang Admin</a>
-                </li>
-            </c:if>
-        </div>
+    </div>
+    <div class="form-inline my-2 my-lg-0 list-unstyled">
+        <c:if test="${sessionScope.jwtResponse eq null}">
+            <li class="nav-item">
+                <a href="" class="btn btn-success" data-toggle="modal" data-target="#modalLoginForm">Đăng nhập</a>
+            </li>
+            <li class="nav-item" style="margin-left: 20px">
+                <a href="" class="btn btn-warning" data-toggle="modal" data-target="#modalRegisterForm">Đăng ký</a>
+            </li>
+        </c:if>
+        <c:if test="${sessionScope.jwtResponse ne null}">
+            <li class="nav-item">
+                <a style="color: gold">${sessionScope.jwtResponse.name}</a>
+            </li>
+            <li class="nav-item">
+                <a href="/account/sign-out" class="btn btn-danger">Đăng xuất</a>
+            </li>
+        </c:if>
+        <c:if test="${sessionScope.jwtResponse.name eq 'Admin'}">
+            <li class="nav-item">
+                <a href="/admin_home" class="btn btn-secondary ml-2">Đến trang Admin</a>
+            </li>
+        </c:if>
     </div>
 </nav>
 

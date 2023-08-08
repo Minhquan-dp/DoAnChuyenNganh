@@ -11,32 +11,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="../../style/Home.css" rel="stylesheet" type="text/css">
+  <link href="../../static/css/style/Home.css" rel="stylesheet" type="text/css">
 
-  <style>
-    .search-container {
-      position: relative;
-    }
-
-    .suggestion-list {
-      position: absolute;
-      width: 100%;
-      background-color: white;
-      border: 1px solid #ddd;
-      border-top: none;
-      display: none;
-      z-index: 100;
-    }
-
-    .suggestion-list-item {
-      padding: 8px 12px;
-      cursor: pointer;
-    }
-
-    .suggestion-list-item:hover {
-      background-color: #f1f1f1;
-    }
-  </style>
   <script>
     function getSuggestions() {
       const keyword = document.getElementById("movie-name").value;
@@ -109,9 +85,8 @@
 
 <body>
 <!-- Content -->
-<div class="container">
+<div class="container" style="max-width: 80%">
   <jsp:include page="header.jsp"/>
-  <h1>Phim Mới Chiếu</h1>
   <div id="demo" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ul class="carousel-indicators">
